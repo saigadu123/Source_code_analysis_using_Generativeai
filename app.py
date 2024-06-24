@@ -59,10 +59,10 @@ def chat():
 
     if input == "clear":
         os.system("rm -rf repo")
-
-    result = qa(input)
-    print(result['answer'])
-    return str(result["answer"])
+    else:
+        result = qa(input)
+        print(result['answer'])
+        return str(result["answer"])
 
 
 
