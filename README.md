@@ -11,11 +11,11 @@ Project repo: https://github.com/
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-conda create -n llmapp python=3.8 -y
+conda create -n venv python=3.9 -y
 ```
 
 ```bash
-conda activate llmapp
+conda activate venv
 ```
 
 
@@ -51,3 +51,4 @@ open up localhost:
 - OpenAI
 - GPT 3
 - ChoromaDB
+- langchain_community
