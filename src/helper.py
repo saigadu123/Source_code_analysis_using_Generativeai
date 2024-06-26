@@ -9,8 +9,8 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 
 #clone any github repositories 
 def repo_ingestion(repo_url):
-    os.makedirs("repo", exist_ok=True)
-    repo_path = "repo/"
+    os.makedirs("git_repo", exist_ok=True)
+    repo_path = "git_repo/"
     Repo.clone_from(repo_url, to_path=repo_path)
 
 

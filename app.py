@@ -58,7 +58,8 @@ def chat():
     print(input)
 
     if input == "clear":
-        os.system("rm -rf repo")
+        os.system("del git_repo -y")
+        os.system("del db -y")
     else:
         result = qa(input)
         print(result['answer'])

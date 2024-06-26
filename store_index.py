@@ -9,7 +9,7 @@ OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 
-documents = load_repo("repo/")
+documents = load_repo("git_repo/")
 text_chunks = text_splitter(documents)
 embeddings = load_embedding()
 
